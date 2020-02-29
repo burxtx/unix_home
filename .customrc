@@ -1,0 +1,43 @@
+
+if [ -f $HOME/.git-completion.bash ]; then
+	source $HOME/.git-completion.bash
+fi
+
+# add environment variables to $PATH
+add_to_path()
+{
+	if [ -d $1 ]; then
+		PATH=$1:$PATH
+	fi
+}
+
+## get rid of command not found ##
+alias cd..='cd ..'
+
+## a quick way to get out of current directory ##
+alias ..='cd ..'
+alias ...='cd ../../../'
+alias ....='cd ../../../../'
+alias .....='cd ../../../../'
+alias .4='cd ../../../../'
+alias .5='cd ../../../../..'
+
+## Colorize the ls output ##
+alias ls='ls --color=auto'
+ 
+## Use a long listing format ##
+alias ll='ls -la'
+ 
+## Show hidden files ##
+alias l.='ls -d .* --color=auto'
+
+alias df='df -H'
+alias du='du -ch'
+alias top='atop'
+
+# install  colordiff package :)
+alias diff='colordiff'
+
+alias vi="vim"
+alias svim='sudo vim'
+alias mkcd='foo(){ mkdir -p "$1"; cd "$1" }; foo '
