@@ -33,10 +33,8 @@ install_file .vimrc
 
 chmod 0600 ~/.ssh/config
 
-if [ ! -e $HOME/.vim/autoload ]; then
-    mkdir -p ~/.vim/autoload
-fi
-
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+if [ ! -e $HOME/.vim/autoload/plug.vim ]; 
+then
+	curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
+fi
