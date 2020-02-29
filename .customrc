@@ -3,7 +3,7 @@ if [ -f $HOME/.git-completion.bash ]; then
 	source $HOME/.git-completion.bash
 fi
 
-# add environment variables to $PATH
+# add to $PATH
 add_to_path()
 {
 	if [ -d $1 ]; then
@@ -41,3 +41,11 @@ alias diff='colordiff'
 alias vi="vim"
 alias svim='sudo vim'
 alias mkcd='foo(){ mkdir -p "$1"; cd "$1" }; foo '
+
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/github
+
+add_to_path /usr/local/go/bin
+export GOPATH=/home/tianxi/go
+export GO111MODULE=on
+export GOPROXY=https://goproxy.io
