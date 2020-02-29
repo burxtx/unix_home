@@ -9,13 +9,14 @@
 	editor = vim
 	whitespace = tab-in-indent,trailing-space
 	trustctime = false
-# [alias]	
-# 	s = status
+[alias]	
+	st = status
 # 	d = difftool
 # 	dl = difftool HEAD^ HEAD
 # 	dc = difftool --cached
-# 	co = checkout
-# 	cm = commit
+	co = checkout
+	ci = commit
+	br = branch
 # 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 # 	l = log --oneline --decorate -12 --color
 # 	ll = log --oneline --decorate --color
