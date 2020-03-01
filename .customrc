@@ -46,6 +46,6 @@ eval $(ssh-agent -s)
 ssh-add ~/.ssh/github
 
 add_to_path /usr/local/go/bin
-export GOPATH=/home/tianxi/go
+export GOPATH=$HOME/go
 export GO111MODULE=on
 export GOPROXY=https://goproxy.io
