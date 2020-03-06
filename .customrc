@@ -49,4 +49,5 @@ add_to_path /usr/local/go/bin
 add_to_path $HOME/bin
 export GOPATH=$HOME/go
 export GO111MODULE=on
-export GOPROXY=https://goproxy.io
+export GOPROXY=https://goproxy.io,direct
+export GOPRIVATE=git.n.xiaomi.com

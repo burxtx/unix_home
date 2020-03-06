@@ -36,3 +36,8 @@ Plug '~/my-prototype-plugin'
 
 " Initialize plugin system
 call plug#end()
+
+if !exists("g:syntax_on")
+    syntax enable
+endif
+

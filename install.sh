@@ -23,7 +23,9 @@ if [ ! -e ~/.bash_local ]; then
 	chmod 0644 ~/.bash_local
 fi
 
+
 install_file .customrc
+install_file .bash_profile
 install_file .bashrc
 install_file .git-completion.bash
 install_file .gitconfig
