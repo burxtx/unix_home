@@ -1,7 +1,7 @@
 # Install
 ```shell
-git clone git@github.com:yubo/home.git ~/.burx
-cd ~/.burx && sh install.sh
+git clone git@github.com:burxtx/unix_home.git ~/.burxtx
+cd ~/.burxtx && sh install.sh
 ```
 
 # features
