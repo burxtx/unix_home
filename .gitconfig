@@ -1,5 +1,5 @@
 [user]
-	name = tianxi
+	name = burxtx
 	email = tianxi@xiaomi.com
 [diff]
 	tool = vimdiff
@@ -10,6 +10,9 @@
 	whitespace = tab-in-indent,trailing-space
 	trustctime = false
 	autocrlf = input # for windows set autocrlf = true
+[url "git@git.n.xiaomi.com:"]
+	insteadOf = https://git.n.xiaomi.com/
+
 [alias]	
 	st = status
 # 	d = difftool

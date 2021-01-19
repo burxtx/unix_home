@@ -14,3 +14,5 @@ fi
 if [ -f $HOME/.customrc ]; then
 	source ~/.customrc
 fi
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
